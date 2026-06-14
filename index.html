@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/logo.jpg" alt="logo" class="agency-logo d-inline-block align-text-top">
+                <span class="logo-text fw-bold">Travel Light</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggler="collapse" data-bs-target="#main-navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main-navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#offer-week">Offerta Della Settimana</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#welcome-summer">Welcome Summer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#offer-day">Offerta Del Giorno</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#last-minute">Last Minute</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonial">Testimonial</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="jumbotron-custom text-center text-white d-flex align-items-center py-5 my-5">
+            <div class="container">
+                <h1 class="display-3 fw-bold">Travel Light</h1>
+                <p class="lead">Il tuo viaggio a portata di click</p>
+                <hr class="my-4 bg-white">
+                <p>Scopri le mete più esclusive della Settimana e parti senza pensieri.</p>
+                <a class="btn btn-outline-light btn-lg" href="#offer-week" role="button">Scopri le offerte</a>
+            </div>
+        </div>
+
+        <div class="container my-3 text-center">
+            <button id="btn-count" class="btn btn-light m-1">Contatore Viaggi</button>
+            <button id="btn-remove" class="btn btn-light m-1">Cancella tutte le Card</button>
+            <button id="btn-collapse" class="btn btn-light m-1">Mostra/Nascondi Offerte della Settimana</button>
+        </div>
+
+        <section class="my-5" id="offer-week">
+            <div class="container">
+                <h2 class="mb-4">Offerte della Settimana</h2>
+                <div class="row g-4">
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="./assets/maldive.jpg" class="card-img-top" alt="Maldive">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title fw-bold">
+                                        <a href="https://www.clubmed.it/d/oceano-indiano?&msclkid=26237d8ceb761628a79317a215202f6f&gclid=26237d8ceb761628a79317a215202f6f&gclsrc=3p.ds&gad_source=7&gad_campaignid=19678117581"
+                                            class="text-decoration-none text-dark">Maldive (Oceano
+                                            Indiano)</a>
+                                    </h5>
+                                    <p class="card-text text-muted small">Volo + Hotel 7 notti tutto incluso</p>
+                                </div>
+                                <div class="text-end mt-3">
+                                    <span class="small text-muted">Da</span>
+                                    <h4 class="fw-bold text-danger mb-0">€ 1299</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="./assets/ibiza.jpg" class="card-img-top" alt="Ibiza">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title fw-bold">
+                                        <a href="https://www.edenviaggi.it/vacanze/spagna/baleari/ibiza"
+                                            class="text-decoration-none text-dark">Ibiza (Spagna) </a>
+                                    </h5>
+                                    <p class="card-text text-muted small">Volo + Hotel 5 notti in resort vicino al
+                                        mare
+                                    </p>
+                                </div>
+                                <div class="text-end mt-3">
+                                    <span class="small text-muted">Da</span>
+                                    <h4 class="fw-bold text-danger mb-0">€ 799</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="./assets/parigi.jpg" class="card-img-top" alt="Parigi">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title fw-bold">
+                                        <a href="https://www.logitravel.it/viaggi/europa/francia/parigi/?slc=7828FBBF126670F2B9AD99A81F898B7E&source=bing&campaignId=506224938&AdGroupID=1266639061787958&MatchType=b&Keyword=/viaggi/europa/francia/parigi/&Device=c&TargetId=dat-2330964651401993:loc-93&utm_campaign=S-LG-IT-PAQ-DSA-Capitales%20Europeas%20(0000,1)&utm_content=Parigi_DSA%20(CIT,8543072,a)&utm_term=/viaggi/europa/francia/parigi/&utm_id=8&iclid=1-242ae045-4139-3032-8032-e0394145e02a-a152&msclkid=80bc236e67891e500e4b494098f94740&utm_medium=389098%7C%7CBing+-+UID+389098&utm_source=Afiliado"
+                                            class="text-decoration-none text-dark">Parigi (Francia) </a>
+                                    </h5>
+                                    <p class="card-text text-muted small">Weekend romantico di 3 notti, volo incluso
+                                    </p>
+                                </div>
+                                <div class="text-end mt-3">
+                                    <span class="small text-muted">Da</span>
+                                    <h4 class="fw-bold text-danger mb-0">€ 499</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="./assets/tokio.jpg" class="card-img-top" alt="Tokyo">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title fw-bold">
+                                        <a href="https://www.sognandoilgiappone.com/viaggi-tokyo/"
+                                            class="text-decoration-none text-dark">
+                                            Tokyo (Giappone) </a>
+                                    </h5>
+                                    <p class="card-text text-muted small">Tour di 10 giorni tra modernità e templi
+                                        antichi</p>
+                                </div>
+                                <div class="text-end mt-3">
+                                    <span class="small text-muted">Da</span>
+                                    <h4 class="fw-bold text-danger mb-0">€ 1599</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-5" id="welcome-summer">
+            <div class="container">
+                <h2 class="mb-4">Welcome Summer</h2>
+                <div class="row g-4">
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card h-100 shadow-lg">
+                            <img src="./assets/MarsaAlam.jpg" class="card-img-top" alt="Egitto">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title fw-bold">
+                                        <a href="https://blog.logitravel.it/hotel-sul-mare/le-10-migliori-destinazioni-costiere-da-visitare-nel-2023/"
+                                            class="text-decoration-none text-dark">Marsa Alam
+                                            (Egitto)</a>
+                                    </h5>
+                                    <p class="card-text text-muted small">Volo + Hotel 7 notti, All Inclusive e
+                                        barriera
+                                        corallina</p>
+                                </div>
+                                <div class="text-end mt-3">
+                                    <span class="small text-muted">Da</span>
+                                    <h4 class="fw-bold text-danger mb-0">€ 999</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card h-100 shadow-lg">
+                            <img src="./assets/Sharm.jpg" class="card-img-top" alt="Egitto">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title fw-bold">
+                                        <a href="https://blog.logitravel.it/hotel-sul-mare/le-10-migliori-destinazioni-costiere-da-visitare-nel-2023/"
+                                            class="text-decoration-none text-dark">Sharm el-Sheikh
+                                            (Egitto)</a>
+                                    </h5>
+                                    <p class="card-text text-muted small">Resort 5 stelle sul mare, volo diretto e
+                                        attività incluse
+                                    </p>
+                                </div>
+                                <div class="text-end mt-3">
+                                    <span class="small text-muted">Da</span>
+                                    <h4 class="fw-bold text-danger mb-0">€ 899</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card h-100 shadow-lg">
+                            <img src="./assets/PlayaInglesjpg.webp" class="card-img-top" alt="Spagna">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title fw-bold">
+                                        <a href="https://blog.logitravel.it/hotel-sul-mare/le-10-migliori-destinazioni-costiere-da-visitare-nel-2023/"
+                                            class="text-decoration-none text-dark">Playa del Inglés
+                                            (Spagna)</a>
+                                    </h5>
+                                    <p class="card-text text-muted small">Soggiorno 7 notti a Gran Canaria tra dune
+                                        e
+                                        divertimento</p>
+                                </div>
+                                <div class="text-end mt-3">
+                                    <span class="small text-muted">Da</span>
+                                    <h4 class="fw-bold text-danger mb-0">€ 699</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card h-100 shadow-lg">
+                            <img src="./assets/CayoSantaMaria.jpg" class="card-img-top" alt="Cuba">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title fw-bold">
+                                        <a href="https://blog.logitravel.it/hotel-sul-mare/le-10-migliori-destinazioni-costiere-da-visitare-nel-2023/"
+                                            class="text-decoration-none text-dark">
+                                            Cayo Santa María (Cuba)</a>
+                                    </h5>
+                                    <p class="card-text text-muted small">Paradiso tropicale incontaminato, volo +
+                                        resort tutto incluso</p>
+                                </div>
+                                <div class="text-end mt-3">
+                                    <span class="small text-muted">Da</span>
+                                    <h4 class="fw-bold text-danger mb-0">€ 1249</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card h-100 shadow-lg">
+                            <img src="./assets/VAradero.jpg" class="card-img-top" alt="Cuba">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title fw-bold">
+                                        <a href="https://blog.logitravel.it/hotel-sul-mare/le-10-migliori-destinazioni-costiere-da-visitare-nel-2023/"
+                                            class="text-decoration-none text-dark">
+                                            Varadero (Cuba)</a>
+                                    </h5>
+                                    <p class="card-text text-muted small">9 notti in villaggio sulla spiaggia bianca
+                                        più
+                                        famosa di Cuba</p>
+                                </div>
+                                <div class="text-end mt-3">
+                                    <span class="small text-muted">Da</span>
+                                    <h4 class="fw-bold text-danger mb-0">€ 1199</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card h-100 shadow-lg">
+                            <img src="./assets/palma.jpg" class="card-img-top" alt="Spagna">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title fw-bold">
+                                        <a href="https://blog.logitravel.it/hotel-sul-mare/le-10-migliori-destinazioni-costiere-da-visitare-nel-2023/"
+                                            class="text-decoration-none text-dark">
+                                            Palma di Maiorca (Spagna)</a>
+                                    </h5>
+                                    <p class="card-text text-muted small">Soggiorno mare e movida nelle splendide
+                                        calette delle Baleari</p>
+                                </div>
+                                <div class="text-end mt-3">
+                                    <span class="small text-muted">Da</span>
+                                    <h4 class="fw-bold text-danger mb-0">€ 799</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-5 d-none d-md-block" id="offer-day">
+            <div class="container">
+                <h2 class="mb-4">Offerta Del Giorno</h2>
+                <div class="row g-4">
+                    <div class="col-12 col-md-8">
+                        <img src="/assets/Dubai.jpg" class="img-fluid rounded" alt="Dubai">
+                    </div>
+                    <div class="col-12 col-md-4 p-4">
+                        <h3 class="fw-bold"> <a href="https://www.alpitour.it/destinazioni/asia/emirati-arabi/dubai"
+                                class="text-decoration-none text-dark"> Dubai (Emirati Arabi Uniti) </a>
+                        </h3>
+                        <p class="text-muted small mb-2 fw-bold">Dal 10 al 17 Agosto</p>
+                        <p class="text-muted">Soggiorno di 7 notti in hotel 5 stelle con piscina sul tetto. Volo a/r
+                            incluso,
+                            escursione nel deserto al tramonto con cena tipica e biglietto per salire sul Burj
+                            Khalifa
+                            compresi nel prezzo.</p>
+                        <div class="mt-4">
+                            <span class="small text-muted d-block fw-bold">Prezzo</span>
+                            <span class="h2 fw-bold text-danger">€ 849</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-5" id="last-minute">
+            <div class="container">
+                <h2 class="mb-4">Last Minute</h2>
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card shadow h-100">
+                            <img src="assets/taormina.jpg" class="card-img-top" alt="taormina">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title fw-bold">
+                                        <a href="https://www.kayak.it/Hotel-a-Taormina.49276.hotel.ksp?sck=SEM&aid=1310619098334782"
+                                            class=" text-decoration-none text-dark">
+                                            Taormina </a>
+                                    </h5>
+                                    <p class="card-text text-muted small">Soggiorno di 7 notti con vista sul mare e
+                                        sull'Etna
+                                        Inclusa escursione in barca all'Isola Bella.</p>
+                                </div>
+                                <div class="text-end mt-3">
+                                    <span class="small text-muted">Da</span>
+                                    <h4 class="fw-bold text-danger mb-0">€ 529</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card shadow h-100">
+                            <img src="assets/campania.jpg" class="card-img-top" alt="Campania">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title fw-bold">
+                                        <a href="https://www.tripadvisor.it/SmartDeals-g187778-Campania-Hotel-Deals.html"
+                                            class=" text-decoration-none text-dark">
+                                            Campania </a>
+                                    </h5>
+                                    <p class="card-text text-muted small">Weekend 3 notti tra arte, cultura e la
+                                        vera
+                                        pizza napoletana
+                                        Soggiorno in pieno centro</p>
+                                </div>
+                                <div class="text-end mt-3">
+                                    <span class="small text-muted">Da</span>
+                                    <h4 class="fw-bold text-danger mb-0">€ 289</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card shadow h-100">
+                            <img src="assets/salento.jpg" class="card-img-top" alt="Salento">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title fw-bold">
+                                        <a href="https://www.salento.it/" class=" text-decoration-none text-dark">
+                                            Salento </a>
+                                    </h5>
+                                    <p class="card-text text-muted small">5 notti in masseria tipica salentina a due
+                                        passi dalle spiagge più belle d'Italia</p>
+                                </div>
+                                <div class="text-end mt-3">
+                                    <span class="small text-muted">Da</span>
+                                    <h4 class="fw-bold text-danger mb-0">€ 349</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-5" id="testimonial">
+            <div class="container">
+                <h2 class="mb-4">Cosa dicono i nostri viaggiatori</h2>
+
+                <div class="row g-4">
+                    <div class="col-12 col-md-4">
+                        <div class="card p-3 shadow-sm h-100 border-0 bg-light">
+                            <div class="card-body">
+                                <div class="text-warning mb-2">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <p class="card-text text-muted italic">"Viaggio a Taormina organizzato alla
+                                    perfezione.
+                                    Struttura pulita, escursione all'Isola Bella indimenticabile. Consigliatissimo!"
+                                </p>
+                                <h6 class="fw-bold mt-3 mb-0">- Marco R.</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card p-3 shadow-sm h-100 border-0 bg-light">
+                            <div class="card-body">
+                                <div class="text-warning mb-2">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <p class="card-text text-muted italic">"Ho prenotato l'offerta del giorno per Dubai
+                                    scettica sul prezzo così basso, invece è stato tutto incredibile. Hotel a 5
+                                    stelle
+                                    pazzesco!"</p>
+                                <h6 class="fw-bold mt-3 mb-0">- Giulia S.</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card p-3 shadow-sm h-100 border-0 bg-light">
+                            <div class="card-body">
+                                <div class="text-warning mb-2">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="card-text text-muted italic">"Il Salento non delude mai, ma la masseria
+                                    consigliata da Travel Light ha superato le aspettative. Ottimo rapporto
+                                    qualità-prezzo."</p>
+                                <h6 class="fw-bold mt-3 mb-0">- Alessandro V.</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-light text-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 text-center text-md-start mb-4 mb-md-0">
+                    <h5 class="fw-bold text-info">Travel Light</h5>
+                    <p class="small text-dark-emphasis mb-1">© 2026 Travel Light S.r.l. - Tutti i diritti riservati.</p>
+                    <p class="small text-dark-emphasis mb-0">Via delle Vacanze 42, Milano | Tel: 02 1234567</p>
+                </div>
+
+                <div class="col-12 col-md-6 text-center text-md-end">
+                    <button type="button" class="btn btn-info text-dark fw-bold px-4 py-2" data-bs-toggle="modal"
+                        data-bs-target="#modalContatti">
+                        Contattaci
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modale Contattaci -->
+    <div class="modal fade" id="modalContatti" tabindex="-1" aria-labelledby="modalContattiLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalContattiLabel">Richiedi Informazioni</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Indirizzo Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                placeholder="nome@esempio.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleMessage" class="form-label">Messaggio</label>
+                            <textarea class="form-control" id="exampleMessage" rows="3"
+                                placeholder="Scrivi qui la tua richiesta..."></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                    <button type="button" class="btn btn-primary" onclick="alert('Messaggio inviato!')">Invia</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+        <script src="/script.js"></script>
+</body>
+
+</html>

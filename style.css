@@ -1,0 +1,25 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.agency-logo{
+    height: 30px;
+    width: auto;
+    mix-blend-mode: multiply;
+}
+
+.jumbotron-custom {
+    min-height: 400px;
+    background: #ff7e5f;
+    background: -webkit-linear-gradient(to bottom, #feb47b, #ff7e5f); 
+    background: linear-gradient(to bottom, #feb47b, #ff7e5f);
+}
+
+.logo-text{
+    color: #ff7e5f;
+}
+
+.card-img-top{
+    height: 250px;
+    object-fit: cover;
+}
